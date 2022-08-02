@@ -65,9 +65,13 @@ describe Pantry do
       @cookbook.add_recipe(@recipe2)
     end
 
-    xit 'can determine if there are enough ingredients for a recipe' do
+    it 'can determine if there are enough ingredients for a recipe' do
       @pantry.restock(@ingredient1, 5)
       @pantry.restock(@ingredient1, 10)
+
+      expect(@pantry.enough_ingredients_for?(@recipe1)).to eq(false)
+
+      @pantry.restock(@ingredient2, 7)
 
       expect(@pantry.enough_ingredients_for?(@recipe1)).to eq(false)
 

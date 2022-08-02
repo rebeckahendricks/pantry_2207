@@ -2,18 +2,18 @@ require './lib/ingredient'
 require './lib/recipe'
 require './lib/cook_book'
 
-describe Cookbook do
+describe CookBook do
     before do
       @cookbook = CookBook.new
       @recipe1 = Recipe.new("Mac and Cheese")
       @recipe2 = Recipe.new("Cheese Burger")
     end
 
-    xit 'exists' do
-      expect(@cookbook).to be_instance_of(Cookbook)
+    it 'exists' do
+      expect(@cookbook).to be_instance_of(CookBook)
     end
 
-    xit 'can add recipes' do
+    it 'can add recipes' do
       @cookbook.add_recipe(@recipe1)
       @cookbook.add_recipe(@recipe2)
 

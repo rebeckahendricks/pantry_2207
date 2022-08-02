@@ -47,11 +47,11 @@ describe CookBook do
       @cookbook.add_recipe(@recipe2)
     end
 
-    xit 'can list all ingredients in all its recipes' do
+    it 'can list all ingredients in all its recipes' do
       expect(@cookbook.ingredients).to eq(["Cheese", "Macaroni", "Ground Beef", "Bun"])
     end
 
-    xit 'can identify the recipe with the highest calories' do
+    it 'can identify the recipe with the highest calories' do
       expect(@cookbook.highest_calorie_meal).to eq(@recipe2)
     end
   end

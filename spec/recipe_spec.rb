@@ -28,7 +28,7 @@ describe Recipe do
       @ingredient2 = Ingredient.new({name: "Macaroni", unit: "oz", calories: 30})
     end
 
-    xit 'can add ingredients' do
+    it 'can add ingredients' do
       @recipe1.add_ingredient(@ingredient1, 2)
       @recipe1.add_ingredient(@ingredient1, 4)
       @recipe1.add_ingredient(@ingredient2, 8)

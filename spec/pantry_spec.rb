@@ -7,11 +7,11 @@ describe Pantry do
       @pantry = Pantry.new
     end
 
-    xit 'exists' do
+    it 'exists' do
       expect(@pantry).to be_instance_of(Pantry)
     end
 
-    xit 'has no stock by default' do
+    it 'has no stock by default' do
       expect(@pantry.stock).to eq({})
     end
   end

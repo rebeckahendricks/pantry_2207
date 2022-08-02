@@ -1,4 +1,6 @@
 require './lib/ingredient'
+require './lib/recipe'
+require './lib/cook_book'
 require './lib/pantry'
 
 describe Ingredient do

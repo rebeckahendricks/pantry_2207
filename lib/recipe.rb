@@ -10,4 +10,10 @@ class Recipe
   def add_ingredient(ingredient, quantity)
     @ingredients_required[ingredient] += quantity
   end
+
+  def total_calories
+    @ingredients_required.sum do |ingredient, quantity|
+      ingredient.calories * quantity
+    end
+  end
 end

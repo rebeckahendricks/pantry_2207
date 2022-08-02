@@ -8,15 +8,15 @@ describe Recipe do
       @recipe1 = Recipe.new("Mac and Cheese")
     end
 
-    xit 'exists' do
+    it 'exists' do
       expect(@recipe1).to be_instance_of(Recipe)
     end
 
-    xit 'has a name' do
+    it 'has a name' do
       expect(@recipe1.name).to eq("Mac and Cheese")
     end
 
-    xit 'has no ingredients required by default' do
+    it 'has no ingredients required by default' do
       expect(@recipe1.ingredients_required).to eq({})
     end
   end

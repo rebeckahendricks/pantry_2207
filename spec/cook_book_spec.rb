@@ -56,4 +56,16 @@ describe CookBook do
     end
   end
 
+  describe 'iteration 4' do
+    before do
+      @cookbook = CookBook.new
+    end
+
+    it 'can return the date created' do
+      today = Date.today.strftime("%m-%d-%Y")
+      
+      expect(@cookbook.date).to eq(today)
+    end
+  end
+
 end
